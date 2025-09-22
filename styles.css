@@ -7,7 +7,14 @@
     font-family: 'sans-serif;
  }
 
+ i {
+   cursor: pointer;
+ }
 
+ a {
+  text-decoration: none;
+  color: aliceblue;
+ }
 
  .navbar {
    display: flex;
@@ -48,6 +55,18 @@
   justify-self: center;
  }
 
+ @media (max-width: 1000px) {
+  .shop{
+    grid-template-columns: repeat(2, 223px);
+  }
+ }
+
+  @media (max-width: 500px) {
+  .shop{
+    grid-template-columns: repeat(1, 223px);
+  }
+ }
+
  .item {
   border: 2px solid #14213d;
   border-radius: 4px;
@@ -79,4 +98,44 @@
 
  .bi-plus-lg {
   color: green
+ }
+
+
+
+
+ .text-center {
+  text-align: center;
+  margin-bottom: 20px;
+ }
+
+ .HomeBtn { 
+  background-color: #14213d;
+  color: aliceblue;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+ }
+
+
+ .bi-x-lg {
+  color: red;
+  font-weight: normal;
+
+ }
+
+
+
+ .shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+ }
+
+ .cart-item {
+  border: 2px solid #14213d;
+  border-radius: 5px;
+  display: flex;
  }
